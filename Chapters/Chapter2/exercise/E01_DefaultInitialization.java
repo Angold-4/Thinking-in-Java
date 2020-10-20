@@ -1,18 +1,27 @@
-// exercise1.java
+// E01_DefaultIntialization.java
 
 /* Exercise 1: 
  * Create a class containing an int and a char that are not initialized,
  * And print their values to verify that Java performs default initialization.
  */
 
-class exercise1 {
+class E01_DefaultInitialization {
     int i;
     char c;
-    exercise1() {
+    // struct method
+    // no need to return
+    /* exercise1() {
+          System.out.println("i =  " + i);
+          System.out.println("c = [" + c + ']');
+    } */
+
+    public E01_DefaultInitialization() {
         System.out.println("i =  " + i);
         System.out.println("c = [" + c + ']');
     }
+
+    
     public static void main(String[] args) {
-        new exercise1();
+        new E01_DefaultInitialization();
     }
 }
